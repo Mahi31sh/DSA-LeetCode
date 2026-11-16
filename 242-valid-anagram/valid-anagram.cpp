@@ -8,10 +8,9 @@ public:
         unordered_map<char,int>b;
         for(int i =0;i<n;i++){
             a[s[i]]++;
-        }
-        for(int i=0;i<n;i++){
             b[t[i]]++;
         }
+        
         for(int i =0;i<n;i++){
             if(a[s[i]]!=b[s[i]]) return false;
         }
