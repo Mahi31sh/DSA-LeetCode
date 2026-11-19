@@ -15,12 +15,13 @@ public:
         for(int i = n; i > 0; i--) {
             if(!buck[i].empty()) {
                 for(auto num : buck[i]) {
-                    ans.push_back(num);
                     if(ans.size() == k) break;
+                    ans.push_back(num);
+                    
                 }
                 
             }
-            if (ans.size() == k) break;
+            //if (ans.size() == k) break;
         }        
         return ans;
     }
